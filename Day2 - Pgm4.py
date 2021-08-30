@@ -24,12 +24,7 @@ def get_result(num):
         if palindrome:
             break
         snum += rnum
-    print("Result:", snum)
-
-
-if __name__ == "__main__":
-    num = int(input("Enter a number in the range 100 to 10000:"))
-    if num >= 100 and num <= 10000:
-        get_result(num)
+    if snum >= 100 and snum <= 10000:
+        print("Result:", snum)
     else:
-        print("Number out of range!")
+        print("No such number within the range 100 - 10000.")
