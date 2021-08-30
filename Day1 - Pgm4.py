@@ -1,12 +1,14 @@
 # to sort dictionary by key or value
 
 def dict_sort(dct, s):
+    print("{", end='')
     if s == 0:
         for k, v in sorted(dct.items(), key=lambda x: x[0]):
-            print(k,v, end=", ")
+            print(k,":", v, end=", ")
     elif s == 1:
         for k, v in sorted(dct.items(), key=lambda x: x[1]):
-            print(k,v, end=", ")
+            print(k, ":", v, end=", ")
+    print("}")
 
 
 if __name__ == "__main__":
