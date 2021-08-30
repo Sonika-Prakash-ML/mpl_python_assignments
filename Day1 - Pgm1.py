@@ -1,10 +1,11 @@
 #  to interchange 2nd and 4th elements in a list.
 
 def interchange(lst):
-    temp = lst[1]
-    lst[1] = lst[3]
-    lst[3] = temp
-    print("The resultant list is:", lst)
+    try:
+        lst[1], lst[3] = lst[3], lst[1]
+        print("The resultant list is:", lst)
+    except:
+        print("The list size is less than 4!")
 
 
 if __name__ == "__main__":
